@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 
   s.name         = "XLMediaZoom"
 
-  s.version      = "1.0"
+  s.version      = "1.0.0"
 
   s.summary      = "UI controls to view an image or video in fullscreen."
 
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.authors      = { "Miguel Revetria" => "miguel@xmartlabs.com", "Martin Barreto" => "martin@xmartlabs.com" }
 
-  s.source       = { :git => "https://github.com/xmartlabs/XLMediaZoom.git" }
+  s.source       = { :git => "https://github.com/xmartlabs/XLMediaZoom.git", :tag => 'v1.0.0' }
 
   s.platform     = :ios, '5.0'
 
