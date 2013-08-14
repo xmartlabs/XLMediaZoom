@@ -32,12 +32,9 @@ XLMediaZoom *imageZoom = [[XLMediaZoom alloc] initWithAnimationTime:@(0.5) image
 
 To go out of fullscreen, simply tap the image or video.
 
-<TABLE ID="IMGS_TABLE" STYLE="WIDTH: 100%;">
-	<TBODY>
-		<TR><TD STYLE="TEXT-ALIGN: CENTER; WIDTH: 50%;">![XLMediaZoom screens](https://f.cloud.github.com/assets/4791678/948724/4af0f8a2-036e-11e3-8778-0432d8bbedec.gif)</TD></TR>
-	</TBODY>
-</TABLE>
-
+<P ALIGN="CENTER">
+<IMG SRC="https://f.cloud.github.com/assets/4791678/963545/40015214-0505-11e3-9564-d97a294e823b.gif" ALT="XLMediaZoom preview"/>
+</P>
 
 XLMediaZoom available classes
 --------
