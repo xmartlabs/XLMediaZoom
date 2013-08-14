@@ -56,4 +56,4 @@ Martin Barreto, <martin@xmartlabs.com>
 
 Miguel Revetria, <miguel@xmartlabs.com>
 
-[Xmartlabs](www.xmartlabs.com)
+[@Xmartlabs](http://www.xmartlabs.com)
