@@ -27,6 +27,7 @@ XLMediaZoom *imageZoom = [[XLMediaZoom alloc] initWithAnimationTime:@(0.5) image
 //..
 
 // On image touch do (you could use a UITapGestureRecognizer):
+[self.view addSubview:imageZoom];
 [imageZoom show];
 ```
 
