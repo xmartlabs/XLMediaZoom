@@ -25,7 +25,6 @@
 		B202D2B617B40370007E83CA /* galaxy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B202D2B417B4036F007E83CA /* galaxy@2x.png */; };
 		B208CC5C17B42E3A000CBDD3 /* video.mov in Resources */ = {isa = PBXBuildFile; fileRef = B208CC5B17B42E3A000CBDD3 /* video.mov */; };
 		B208CC5E17B42FC3000CBDD3 /* video_image.png in Resources */ = {isa = PBXBuildFile; fileRef = B208CC5D17B42FC3000CBDD3 /* video_image.png */; };
-		B208CC6217B43550000CBDD3 /* XLMediaZoom.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B208CC6117B43550000CBDD3 /* XLMediaZoom.podspec */; };
 		B211289117B40C62006CE83D /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = B211289017B40C62006CE83D /* background.png */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +54,6 @@
 		B202D2B417B4036F007E83CA /* galaxy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "galaxy@2x.png"; path = "Resources/galaxy@2x.png"; sourceTree = "<group>"; };
 		B208CC5B17B42E3A000CBDD3 /* video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = video.mov; path = Resources/video.mov; sourceTree = "<group>"; };
 		B208CC5D17B42FC3000CBDD3 /* video_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = video_image.png; path = Resources/video_image.png; sourceTree = "<group>"; };
-		B208CC6117B43550000CBDD3 /* XLMediaZoom.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XLMediaZoom.podspec; sourceTree = "<group>"; };
 		B211289017B40C62006CE83D /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = Resources/background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +75,6 @@
 		B202D27417B3FDCF007E83CA = {
 			isa = PBXGroup;
 			children = (
-				B208CC6117B43550000CBDD3 /* XLMediaZoom.podspec */,
 				B202D28617B3FDCF007E83CA /* XLMediaZoom */,
 				B202D27F17B3FDCF007E83CA /* Frameworks */,
 				B202D27E17B3FDCF007E83CA /* Products */,
@@ -217,7 +214,6 @@
 				B211289117B40C62006CE83D /* background.png in Resources */,
 				B208CC5C17B42E3A000CBDD3 /* video.mov in Resources */,
 				B208CC5E17B42FC3000CBDD3 /* video_image.png in Resources */,
-				B208CC6217B43550000CBDD3 /* XLMediaZoom.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
