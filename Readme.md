@@ -8,7 +8,7 @@ Installation
 
 The easy way to integrate XLMediaZoom in your projects is via [CocoaPods](http://cocoapods.org).
 
-`pod 'XLMediaZoom', :git => https://github.com/xmartlabs/XLMediaZoom.git`
+`pod 'XLMediaZoom'`
 
 If you prefer, you can install XLMediaZoom manually by doing:
 1. Drag and drop the folder XLMediaZoom/XL to your project
