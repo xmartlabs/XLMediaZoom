@@ -58,9 +58,8 @@
 {
     if (_imageZoomView) return _imageZoomView;
     
-    _imageZoomView = [[XLMediaZoom alloc] initWithAnimationTime:@(0.5) image:self.imageView];
+    _imageZoomView = [[XLMediaZoom alloc] initWithAnimationTime:@(0.5) image:self.imageView blurEffect:YES];
     _imageZoomView.tag = 1;
-    _imageZoomView.maxAlpha = 0.75;
     _imageZoomView.backgroundColor = [UIColor colorWithRed:0.0 green:0.05 blue:0.3 alpha:1.0];
     
     return _imageZoomView;

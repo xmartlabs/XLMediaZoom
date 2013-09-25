@@ -18,6 +18,9 @@
 @end
 
 @implementation XLMediaZoom
+{
+    BOOL _useBlurEffect;
+}
 
 @synthesize animationTime   = _animationTime;
 @synthesize backgroundView  = _backgroundView;
@@ -32,23 +35,31 @@
 {
     if (_backgroundView) return _backgroundView;
     
-    _backgroundView = [[UIView alloc] initWithFrame:self.frame];
-    [_backgroundView setBackgroundColor:[UIColor blackColor]];
-    [_backgroundView setAlpha:0.0];
-
+    if (_useBlurEffect) {
+        UINavigationBar *blurView = [[UINavigationBar alloc] initWithFrame:self.frame];
+        blurView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+        blurView.barTintColor = [UIColor blackColor];
+        blurView.alpha = 0.0;
+        _backgroundView = blurView;
+    } else {
+        _backgroundView = [[UIView alloc] initWithFrame:self.frame];
+        [_backgroundView setBackgroundColor:[UIColor blackColor]];
+        [_backgroundView setAlpha:0.0];
+    }
+    
     return _backgroundView;
 }
 
 - (UIImageView *)imageView
 {
     if (_imageView) return _imageView;
-
+    
     _imageView = [[UIImageView alloc] initWithFrame:self.initMediaFrame];
     _imageView.clipsToBounds = YES;
     [_imageView setAutoresizingMask:(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth)];
     [_imageView setContentMode:UIViewContentModeScaleAspectFill];
     
-
+    
     return _imageView;
 }
 
@@ -65,8 +76,17 @@
 - (id)initWithAnimationTime:(NSNumber *)seconds
                       image:(UIImageView *)imageView
 {
+    return [self initWithAnimationTime:seconds image:imageView blurEffect:NO];
+}
+
+- (id)initWithAnimationTime:(NSNumber *)seconds
+                      image:(UIImageView *)imageView
+                 blurEffect:(BOOL)useBlur
+{
     self = [super initWithFrame:[self currentFrame:[[UIApplication sharedApplication] statusBarOrientation]]];
     if (self) {
+        _useBlurEffect = useBlur && !SYSTEM_VERSION_iOS_6;
+        
         self.animationTime = seconds;
         self.originalImageView = imageView;
         self.maxAlpha = 1.0;
@@ -94,7 +114,11 @@
 
 - (void)setBackgroundColor:(UIColor *)backgroundColor
 {
-    self.backgroundView.backgroundColor = backgroundColor;
+    if (SYSTEM_VERSION_iOS_6) {
+        self.backgroundView.backgroundColor = backgroundColor;
+    } else {
+        ((UINavigationBar *) self.backgroundView).barTintColor = backgroundColor;
+    }
 }
 
 - (void)show
@@ -139,7 +163,7 @@
 {
     [self willHandleSingleTap];
     XLMediaZoom * __weak weakSelf = self;
-
+    
     [UIView animateWithDuration:[self.animationTime doubleValue]
                      animations:^{
                          // Resize the image view to fill the view frame
@@ -154,14 +178,15 @@
                              }
                          }
                      }
-     ];    
+     ];
 }
 
 - (CGRect)currentFrame:(UIInterfaceOrientation)orientation
 {
     CGSize screenSize = [UIScreen mainScreen].bounds.size;
     float statusBarHeight = 0;
-    if (![UIApplication sharedApplication].statusBarHidden) {
+    
+    if (SYSTEM_VERSION_iOS_6 && ![UIApplication sharedApplication].statusBarHidden) {
         statusBarHeight = 20;
     }
     if (UIInterfaceOrientationIsLandscape(orientation)){
@@ -179,7 +204,7 @@
     float imageViewWidth = imageSize.width * ratio;
     float imageViewHeight = imageSize.height * ratio;
     
-    return CGRectMake((self.frame.size.width - imageViewWidth) / 2.0, (self.frame.size.height - imageViewHeight) / 2.0, imageViewWidth, imageViewHeight);
+    return CGRectMake((self.frame.size.width - imageViewWidth) * 0.5f, (self.frame.size.height - imageViewHeight) * 0.5f, imageViewWidth, imageViewHeight);
 }
 
 - (void)deviceOrientationDidChange:(NSNotification *)notification
