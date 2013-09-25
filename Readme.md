@@ -1,14 +1,14 @@
 XLMediaZoom
 ========
 
-XLMediaZoom is a tool for iPhone (iOS 5+) to display images and reproduce videos in fullscreen like Instagram does.
+XLMediaZoom is a tool for iPhone (iOS 5+) to display images and reproduce videos in fullscreen like Instagram does. It's fully tested on iOS 7 and has blur capability depending on your iPhone device.
 
 Installation
 --------
 
 The easy way to integrate XLMediaZoom in your projects is via [CocoaPods](http://cocoapods.org).
 
-`pod 'XLMediaZoom', :git => https://github.com/xmartlabs/XLMediaZoom.git`
+`pod 'XLMediaZoom'`
 
 If you prefer, you can install XLMediaZoom manually by doing:
 1. Drag and drop the folder XLMediaZoom/XL to your project
@@ -22,7 +22,7 @@ See `XLViewController` in the example project for details on how to use this com
 ```objc
 UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 240, 120)];
 // Declare an image zoom view associated with the previous UIImageView
-XLMediaZoom *imageZoom = [[XLMediaZoom alloc] initWithAnimationTime:@(0.5) image:imageView];
+XLMediaZoom *imageZoom = [[XLMediaZoom alloc] initWithAnimationTime:@(0.5) image:imageView blurEffect:YES];
 
 //..
 
