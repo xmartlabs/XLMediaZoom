@@ -14,4 +14,9 @@
                       image:(UIImageView *)imageView
                    videoUrl:(NSURL *)videoUrl;
 
+- (id)initWithAnimationTime:(NSNumber *)seconds
+                      image:(UIImageView *)imageView
+                   videoUrl:(NSURL *)videoUrl
+                 blurEffect:(BOOL)useBlur;
+
 @end

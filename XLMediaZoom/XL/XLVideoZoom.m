@@ -25,11 +25,20 @@
 
 @synthesize url = _url;
 
+
 - (id)initWithAnimationTime:(NSNumber *)seconds
                       image:(UIImageView *)imageView
                    videoUrl:(NSURL *)videoUrl
 {
-    self = [super initWithAnimationTime:seconds image:imageView];
+    return [self initWithAnimationTime:seconds image:imageView videoUrl:videoUrl blurEffect:NO];
+}
+
+- (id)initWithAnimationTime:(NSNumber *)seconds
+                      image:(UIImageView *)imageView
+                   videoUrl:(NSURL *)videoUrl
+                 blurEffect:(BOOL)useBlur
+{
+    self = [super initWithAnimationTime:seconds image:imageView blurEffect:useBlur];
     if (self)
     {
         self.url = videoUrl;
