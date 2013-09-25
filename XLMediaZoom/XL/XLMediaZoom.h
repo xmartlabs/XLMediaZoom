@@ -8,10 +8,18 @@
 
 @class XLMediaZoom;
 
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+
+#define SYSTEM_VERSION_iOS_6 (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1)
+
 @interface XLMediaZoom : UIView
 
 - (id)initWithAnimationTime:(NSNumber *)seconds
                       image:(UIImageView *)imageView;
+
+- (id)initWithAnimationTime:(NSNumber *)seconds
+                      image:(UIImageView *)imageView
+                 blurEffect:(BOOL)useBlur;
 
 @property (readonly, nonatomic)  UIImageView * imageView;
 @property CGFloat maxAlpha;
