@@ -83,9 +83,9 @@
 {
     if (_videoZoomView) return _videoZoomView;
     
-    _videoZoomView = [[XLVideoZoom alloc] initWithAnimationTime:@(0.5) image:self.videoImageView videoUrl:[[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"video" ofType:@"mov"]] blurEffect:YES];
+    _videoZoomView = [[XLVideoZoom alloc] initWithAnimationTime:@(0.5) image:self.videoImageView videoUrl:[[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"video" ofType:@"mov"]]];
     _videoZoomView.tag = 2;
-    _videoZoomView.maxAlpha = 1;
+    _videoZoomView.maxAlpha = 0.85;
 
     return _videoZoomView;
 }
