@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>510CD821-70E3-44AB-91C6-3C7ECFFA2789</string>
+	<string>1E66D1ED-FD70-4592-983C-A8B229E792F9</string>
 	<key>IDESourceControlProjectName</key>
 	<string>XLMediaZoom</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>C97F190B-CC61-4999-991C-A7BEA629787C</key>
-		<string>https://github.com/m-revetria/XLMediaZoom.git</string>
+		<key>635205F0-CD10-4D5C-A452-51A30738DCA4</key>
+		<string>https://github.com/xhzengAIB/XLMediaZoom.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>XLMediaZoom.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>C97F190B-CC61-4999-991C-A7BEA629787C</key>
+		<key>635205F0-CD10-4D5C-A452-51A30738DCA4</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/m-revetria/XLMediaZoom.git</string>
+	<string>https://github.com/xhzengAIB/XLMediaZoom.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C97F190B-CC61-4999-991C-A7BEA629787C</string>
+	<string>635205F0-CD10-4D5C-A452-51A30738DCA4</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C97F190B-CC61-4999-991C-A7BEA629787C</string>
+			<string>635205F0-CD10-4D5C-A452-51A30738DCA4</string>
 			<key>IDESourceControlWCCName</key>
 			<string>XLMediaZoom</string>
 		</dict>

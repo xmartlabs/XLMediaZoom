@@ -118,7 +118,11 @@
         self.backgroundView.backgroundColor = backgroundColor;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_6_1
     } else {
-        ((UINavigationBar *) self.backgroundView).barTintColor = backgroundColor;
+        if ([self.backgroundView isKindOfClass:[UINavigationBar class]]) {
+            ((UINavigationBar *) self.backgroundView).barTintColor = backgroundColor;
+        } else if ([self.backgroundView isKindOfClass:[UIView class]]) {
+            self.backgroundView.tintColor = backgroundColor;
+        }
 #endif
     }
 }
