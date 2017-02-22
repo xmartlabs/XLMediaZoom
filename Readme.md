@@ -1,60 +1,87 @@
-XLMediaZoom
-========
+# XLMediaZoom
 
-XLMediaZoom is a tool for iPhone (iOS 5+) to display images and reproduce videos in fullscreen like Instagram does. It's fully tested on iOS 7 and has blur capability depending on your iPhone device.
+<p align="left">
+<a href="https://travis-ci.org/xmartlabs/XLMediaZoom"><img src="https://travis-ci.org/xmartlabs/XLMediaZoom.svg?branch=master" alt="Build status" /></a>
+<img src="https://img.shields.io/badge/platform-iOS-blue.svg?style=flat" alt="Platform iOS" />
+<a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift3-compatible-4BC51D.svg?style=flat" alt="Swift 3 compatible" /></a>
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible" /></a>
+<a href="https://cocoapods.org/pods/XLActionController"><img src="https://img.shields.io/cocoapods/v/XLMediaZoom.svg" alt="CocoaPods compatible" /></a>
+<a href="https://raw.githubusercontent.com/xmartlabs/XLMediaZoom/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="License: MIT" /></a>
+</p>
 
-Installation
---------
+By [Xmartlabs SRL](http://xmartlabs.com).
 
-The easy way to integrate XLMediaZoom in your projects is via [CocoaPods](http://cocoapods.org).
+## Introduction
 
-`pod 'XLMediaZoom'`
+XLMediaZoom is a library to display images and video in fullscreen with blur and zooming capabilities.
 
-If you prefer, you can install XLMediaZoom manually by doing:
-1. Drag and drop the folder XLMediaZoom/XL to your project
-2. In files where you think you will use this utility import `XLMediaZoom.h` for images and `XLVideoZoom.h` for videos.
+<img src="./README.gif" width="300"/>
 
-Example
---------
+## Usage
 
-See `XLViewController` in the example project for details on how to use this component. In short, though:
+```swift
+import XLMediaZoom
+//Initialize both your image and the mediaZoom view associated.
+let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 240, height: 120))
+let mediaZoom = MediaZoom(with: imageView, animationTime: 1, useBlur: true)
 
-```objc
-UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 240, 120)];
-// Declare an image zoom view associated with the previous UIImageView
-XLMediaZoom *imageZoom = [[XLMediaZoom alloc] initWithAnimationTime:@(0.5) image:imageView blurEffect:YES];
+//Add the mediaZoom view to your superView and show it.
+view.addSubview(mediaZoom)
+mediaZoom.show()
 
-//..
-
-// On image touch do (you could use a UITapGestureRecognizer):
-[self.view addSubview:imageZoom];
-[imageZoom show];
 ```
 
-To go out of fullscreen, simply tap the image or video.
+## Requirements
 
-<P ALIGN="CENTER">
-<IMG SRC="https://f.cloud.github.com/assets/4791678/1226864/67bd8502-2788-11e3-9a42-9dfbf1a9b05c.gif" ALT="XLMediaZoom preview"/>
-</P>
+* iOS 9.0+
+* Xcode 8.0+
 
-XLMediaZoom available classes
---------
+## Getting involved
 
-1. `XLMediaZoom` defined in `XLMediaZoom.h`. This base class is used to fullscreen an image taking an UIImageView for that.
-2. `XLVideoZoom` defined in `XLMediaZoom.h`. This class inherits from XLMediaZoom and takes a UIImageView (video's preview) and a NSURL (video's URL).
-Use this class is similar as you use XLMediaZoom.
+* If you **want to contribute** please feel free to **submit pull requests**.
+* If you **have a feature request** please **open an issue**.
+* If you **found a bug** or **need help** please **check older issues, [FAQ](#faq) and threads on [StackOverflow](http://stackoverflow.com/questions/tagged/XLMediaZoom) (Tag 'XLMediaZoom') before submitting an issue.**.
 
-License
---------
-XLMediaZoom is distributed under MIT license, please feel free to use it and contribute.
+Before contribute check the [CONTRIBUTING](https://github.com/xmartlabs/XLMediaZoom/blob/master/CONTRIBUTING.md) file for more info.
 
-Contact
---------
+If you use **XLMediaZoom** in your app We would love to hear about it! Drop us a line on [twitter](https://twitter.com/xmartlabs).
 
-If you are using XLMediaZoom in your project and have any suggestion or any question:
+## Examples
 
-Martin Barreto, <martin@xmartlabs.com>
+Follow these 3 steps to run Example project: Clone XLMediaZoom repository, open XLMediaZoom workspace and run the *Example* project.
 
-Miguel Revetria, <miguel@xmartlabs.com>
+## Installation
 
-[@Xmartlabs](http://www.xmartlabs.com)
+#### CocoaPods
+
+[CocoaPods](https://cocoapods.org/) is a dependency manager for Cocoa projects.
+
+To install XLMediaZoom, simply add the following line to your Podfile:
+
+```ruby
+pod 'XLMediaZoom', '~> 3.0'
+```
+
+#### Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is a simple, decentralized dependency manager for Cocoa.
+
+To install XLMediaZoom, simply add the following line to your Cartfile:
+
+```ogdl
+github "xmartlabs/XLMediaZoom" ~> 3.0
+```
+
+## Author
+
+* [Xmartlabs SRL](https://github.com/xmartlabs) ([@xmartlabs](https://twitter.com/xmartlabs))
+
+## FAQ
+
+#### How to .....
+
+You can do it by conforming to .....
+
+# Change Log
+
+This can be found in the [CHANGELOG.md](CHANGELOG.md) file.
