@@ -7,161 +7,117 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B202D28117B3FDCF007E83CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B202D28017B3FDCF007E83CA /* UIKit.framework */; };
-		B202D28317B3FDCF007E83CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B202D28217B3FDCF007E83CA /* Foundation.framework */; };
-		B202D28517B3FDCF007E83CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B202D28417B3FDCF007E83CA /* CoreGraphics.framework */; };
-		B202D28B17B3FDCF007E83CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B202D28917B3FDCF007E83CA /* InfoPlist.strings */; };
-		B202D28D17B3FDCF007E83CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B202D28C17B3FDCF007E83CA /* main.m */; };
-		B202D29117B3FDCF007E83CA /* XLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B202D29017B3FDCF007E83CA /* XLAppDelegate.m */; };
-		B202D29A17B3FDD0007E83CA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B202D29817B3FDD0007E83CA /* MainStoryboard.storyboard */; };
-		B202D29D17B3FDD0007E83CA /* XLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B202D29C17B3FDD0007E83CA /* XLViewController.m */; };
-		B202D2A817B3FED2007E83CA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B202D2A517B3FED2007E83CA /* Default-568h@2x.png */; };
-		B202D2A917B3FED2007E83CA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B202D2A617B3FED2007E83CA /* Default.png */; };
-		B202D2AA17B3FED2007E83CA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B202D2A717B3FED2007E83CA /* Default@2x.png */; };
-		B202D2AF17B3FEE2007E83CA /* XLMediaZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = B202D2AC17B3FEE2007E83CA /* XLMediaZoom.m */; };
-		B202D2B017B3FEE2007E83CA /* XLVideoZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = B202D2AE17B3FEE2007E83CA /* XLVideoZoom.m */; };
-		B202D2B217B3FFC5007E83CA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B202D2B117B3FFC5007E83CA /* AVFoundation.framework */; };
-		B202D2B517B40370007E83CA /* galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = B202D2B317B4036F007E83CA /* galaxy.png */; };
-		B202D2B617B40370007E83CA /* galaxy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B202D2B417B4036F007E83CA /* galaxy@2x.png */; };
-		B208CC5C17B42E3A000CBDD3 /* video.mov in Resources */ = {isa = PBXBuildFile; fileRef = B208CC5B17B42E3A000CBDD3 /* video.mov */; };
-		B208CC5E17B42FC3000CBDD3 /* video_image.png in Resources */ = {isa = PBXBuildFile; fileRef = B208CC5D17B42FC3000CBDD3 /* video_image.png */; };
-		B211289117B40C62006CE83D /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = B211289017B40C62006CE83D /* background.png */; };
+		1AE793581E5DD663007F1958 /* MediaZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE793561E5DD663007F1958 /* MediaZoom.swift */; };
+		1AE793591E5DD663007F1958 /* VideoZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE793571E5DD663007F1958 /* VideoZoom.swift */; };
+		287D0A6E1C4B73BD004566D6 /* XLMediaZoomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D0A6D1C4B73BD004566D6 /* XLMediaZoomTests.swift */; };
+		28F828811C494B2C00330CF4 /* XLMediaZoom.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F828801C494B2C00330CF4 /* XLMediaZoom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28F828881C494B2C00330CF4 /* XLMediaZoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F8287D1C494B2C00330CF4 /* XLMediaZoom.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		28F828891C494B2C00330CF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28F828741C494B2C00330CF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28F8287C1C494B2C00330CF4;
+			remoteInfo = XLMediaZoom;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		B202D27D17B3FDCF007E83CA /* XLMediaZoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLMediaZoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B202D28017B3FDCF007E83CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B202D28217B3FDCF007E83CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B202D28417B3FDCF007E83CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B202D28817B3FDCF007E83CA /* XLMediaZoom-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XLMediaZoom-Info.plist"; sourceTree = "<group>"; };
-		B202D28A17B3FDCF007E83CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B202D28C17B3FDCF007E83CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B202D28E17B3FDCF007E83CA /* XLMediaZoom-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XLMediaZoom-Prefix.pch"; sourceTree = "<group>"; };
-		B202D28F17B3FDCF007E83CA /* XLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLAppDelegate.h; sourceTree = "<group>"; };
-		B202D29017B3FDCF007E83CA /* XLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLAppDelegate.m; sourceTree = "<group>"; };
-		B202D29917B3FDD0007E83CA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		B202D29B17B3FDD0007E83CA /* XLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLViewController.h; sourceTree = "<group>"; };
-		B202D29C17B3FDD0007E83CA /* XLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLViewController.m; sourceTree = "<group>"; };
-		B202D2A517B3FED2007E83CA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
-		B202D2A617B3FED2007E83CA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
-		B202D2A717B3FED2007E83CA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
-		B202D2AB17B3FEE2007E83CA /* XLMediaZoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XLMediaZoom.h; path = XL/XLMediaZoom.h; sourceTree = "<group>"; };
-		B202D2AC17B3FEE2007E83CA /* XLMediaZoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XLMediaZoom.m; path = XL/XLMediaZoom.m; sourceTree = "<group>"; };
-		B202D2AD17B3FEE2007E83CA /* XLVideoZoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XLVideoZoom.h; path = XL/XLVideoZoom.h; sourceTree = "<group>"; };
-		B202D2AE17B3FEE2007E83CA /* XLVideoZoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XLVideoZoom.m; path = XL/XLVideoZoom.m; sourceTree = "<group>"; };
-		B202D2B117B3FFC5007E83CA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		B202D2B317B4036F007E83CA /* galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = galaxy.png; path = Resources/galaxy.png; sourceTree = "<group>"; };
-		B202D2B417B4036F007E83CA /* galaxy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "galaxy@2x.png"; path = "Resources/galaxy@2x.png"; sourceTree = "<group>"; };
-		B208CC5B17B42E3A000CBDD3 /* video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = video.mov; path = Resources/video.mov; sourceTree = "<group>"; };
-		B208CC5D17B42FC3000CBDD3 /* video_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = video_image.png; path = Resources/video_image.png; sourceTree = "<group>"; };
-		B211289017B40C62006CE83D /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = Resources/background.png; sourceTree = "<group>"; };
+		1AE793561E5DD663007F1958 /* MediaZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaZoom.swift; sourceTree = "<group>"; };
+		1AE793571E5DD663007F1958 /* VideoZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoZoom.swift; sourceTree = "<group>"; };
+		287D0A6D1C4B73BD004566D6 /* XLMediaZoomTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XLMediaZoomTests.swift; path = Tests/XLMediaZoomTests.swift; sourceTree = SOURCE_ROOT; };
+		28F8287D1C494B2C00330CF4 /* XLMediaZoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XLMediaZoom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F828801C494B2C00330CF4 /* XLMediaZoom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLMediaZoom.h; sourceTree = "<group>"; };
+		28F828821C494B2C00330CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28F828871C494B2C00330CF4 /* XLMediaZoomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XLMediaZoomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F8288E1C494B2C00330CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Tests/Info.plist; sourceTree = "<group>"; };
+		28F8289B1C494BF100330CF4 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Playground.playground; path = Example/Playground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B202D27A17B3FDCF007E83CA /* Frameworks */ = {
+		28F828791C494B2C00330CF4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B202D2B217B3FFC5007E83CA /* AVFoundation.framework in Frameworks */,
-				B202D28117B3FDCF007E83CA /* UIKit.framework in Frameworks */,
-				B202D28317B3FDCF007E83CA /* Foundation.framework in Frameworks */,
-				B202D28517B3FDCF007E83CA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F828841C494B2C00330CF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28F828881C494B2C00330CF4 /* XLMediaZoom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B202D27417B3FDCF007E83CA = {
+		28F828731C494B2C00330CF4 = {
 			isa = PBXGroup;
 			children = (
-				B202D28617B3FDCF007E83CA /* XLMediaZoom */,
-				B202D27F17B3FDCF007E83CA /* Frameworks */,
-				B202D27E17B3FDCF007E83CA /* Products */,
+				28F8289B1C494BF100330CF4 /* Playground.playground */,
+				28F828971C494B4200330CF4 /* Sources */,
+				28F8288B1C494B2C00330CF4 /* Tests */,
+				28F8287E1C494B2C00330CF4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B202D27E17B3FDCF007E83CA /* Products */ = {
+		28F8287E1C494B2C00330CF4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B202D27D17B3FDCF007E83CA /* XLMediaZoom.app */,
+				28F8287D1C494B2C00330CF4 /* XLMediaZoom.framework */,
+				28F828871C494B2C00330CF4 /* XLMediaZoomTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B202D27F17B3FDCF007E83CA /* Frameworks */ = {
+		28F8288B1C494B2C00330CF4 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B202D2B117B3FFC5007E83CA /* AVFoundation.framework */,
-				B202D28017B3FDCF007E83CA /* UIKit.framework */,
-				B202D28217B3FDCF007E83CA /* Foundation.framework */,
-				B202D28417B3FDCF007E83CA /* CoreGraphics.framework */,
+				28F8288E1C494B2C00330CF4 /* Info.plist */,
+				287D0A6D1C4B73BD004566D6 /* XLMediaZoomTests.swift */,
 			);
-			name = Frameworks;
+			name = Tests;
+			path = XLMediaZoomTests;
 			sourceTree = "<group>";
 		};
-		B202D28617B3FDCF007E83CA /* XLMediaZoom */ = {
+		28F828971C494B4200330CF4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				B202D28F17B3FDCF007E83CA /* XLAppDelegate.h */,
-				B202D29017B3FDCF007E83CA /* XLAppDelegate.m */,
-				B202D29817B3FDD0007E83CA /* MainStoryboard.storyboard */,
-				B202D29B17B3FDD0007E83CA /* XLViewController.h */,
-				B202D29C17B3FDD0007E83CA /* XLViewController.m */,
-				B202D2A317B3FEB7007E83CA /* XL */,
-				B202D28717B3FDCF007E83CA /* Supporting Files */,
+				1AE793561E5DD663007F1958 /* MediaZoom.swift */,
+				1AE793571E5DD663007F1958 /* VideoZoom.swift */,
+				28F828801C494B2C00330CF4 /* XLMediaZoom.h */,
+				28F828821C494B2C00330CF4 /* Info.plist */,
 			);
-			path = XLMediaZoom;
-			sourceTree = "<group>";
-		};
-		B202D28717B3FDCF007E83CA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B202D2A417B3FEC5007E83CA /* Resources */,
-				B202D28817B3FDCF007E83CA /* XLMediaZoom-Info.plist */,
-				B202D28917B3FDCF007E83CA /* InfoPlist.strings */,
-				B202D28C17B3FDCF007E83CA /* main.m */,
-				B202D28E17B3FDCF007E83CA /* XLMediaZoom-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B202D2A317B3FEB7007E83CA /* XL */ = {
-			isa = PBXGroup;
-			children = (
-				B202D2AB17B3FEE2007E83CA /* XLMediaZoom.h */,
-				B202D2AC17B3FEE2007E83CA /* XLMediaZoom.m */,
-				B202D2AD17B3FEE2007E83CA /* XLVideoZoom.h */,
-				B202D2AE17B3FEE2007E83CA /* XLVideoZoom.m */,
-			);
-			name = XL;
-			sourceTree = "<group>";
-		};
-		B202D2A417B3FEC5007E83CA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				B208CC5D17B42FC3000CBDD3 /* video_image.png */,
-				B208CC5B17B42E3A000CBDD3 /* video.mov */,
-				B211289017B40C62006CE83D /* background.png */,
-				B202D2B317B4036F007E83CA /* galaxy.png */,
-				B202D2B417B4036F007E83CA /* galaxy@2x.png */,
-				B202D2A517B3FED2007E83CA /* Default-568h@2x.png */,
-				B202D2A617B3FED2007E83CA /* Default.png */,
-				B202D2A717B3FED2007E83CA /* Default@2x.png */,
-			);
-			name = Resources;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		28F8287A1C494B2C00330CF4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28F828811C494B2C00330CF4 /* XLMediaZoom.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		B202D27C17B3FDCF007E83CA /* XLMediaZoom */ = {
+		28F8287C1C494B2C00330CF4 /* XLMediaZoom */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B202D2A017B3FDD0007E83CA /* Build configuration list for PBXNativeTarget "XLMediaZoom" */;
+			buildConfigurationList = 28F828911C494B2C00330CF4 /* Build configuration list for PBXNativeTarget "XLMediaZoom" */;
 			buildPhases = (
-				B202D27917B3FDCF007E83CA /* Sources */,
-				B202D27A17B3FDCF007E83CA /* Frameworks */,
-				B202D27B17B3FDCF007E83CA /* Resources */,
+				28F828781C494B2C00330CF4 /* Sources */,
+				28F828791C494B2C00330CF4 /* Frameworks */,
+				28F8287A1C494B2C00330CF4 /* Headers */,
+				28F8287B1C494B2C00330CF4 /* Resources */,
+				1A3FD9A41E66FDA100B5DFB0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -169,191 +125,317 @@
 			);
 			name = XLMediaZoom;
 			productName = XLMediaZoom;
-			productReference = B202D27D17B3FDCF007E83CA /* XLMediaZoom.app */;
-			productType = "com.apple.product-type.application";
+			productReference = 28F8287D1C494B2C00330CF4 /* XLMediaZoom.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		28F828861C494B2C00330CF4 /* XLMediaZoomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28F828941C494B2C00330CF4 /* Build configuration list for PBXNativeTarget "XLMediaZoomTests" */;
+			buildPhases = (
+				28F828831C494B2C00330CF4 /* Sources */,
+				28F828841C494B2C00330CF4 /* Frameworks */,
+				28F828851C494B2C00330CF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28F8288A1C494B2C00330CF4 /* PBXTargetDependency */,
+			);
+			name = XLMediaZoomTests;
+			productName = XLMediaZoomTests;
+			productReference = 28F828871C494B2C00330CF4 /* XLMediaZoomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B202D27517B3FDCF007E83CA /* Project object */ = {
+		28F828741C494B2C00330CF4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = XL;
-				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = Xmartlabs;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0800;
+				TargetAttributes = {
+					28F8287C1C494B2C00330CF4 = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0820;
+					};
+					28F828861C494B2C00330CF4 = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
+					};
+				};
 			};
-			buildConfigurationList = B202D27817B3FDCF007E83CA /* Build configuration list for PBXProject "XLMediaZoom" */;
+			buildConfigurationList = 28F828771C494B2C00330CF4 /* Build configuration list for PBXProject "XLMediaZoom" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = B202D27417B3FDCF007E83CA;
-			productRefGroup = B202D27E17B3FDCF007E83CA /* Products */;
+			mainGroup = 28F828731C494B2C00330CF4;
+			productRefGroup = 28F8287E1C494B2C00330CF4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B202D27C17B3FDCF007E83CA /* XLMediaZoom */,
+				28F8287C1C494B2C00330CF4 /* XLMediaZoom */,
+				28F828861C494B2C00330CF4 /* XLMediaZoomTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B202D27B17B3FDCF007E83CA /* Resources */ = {
+		28F8287B1C494B2C00330CF4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B202D28B17B3FDCF007E83CA /* InfoPlist.strings in Resources */,
-				B202D29A17B3FDD0007E83CA /* MainStoryboard.storyboard in Resources */,
-				B202D2A817B3FED2007E83CA /* Default-568h@2x.png in Resources */,
-				B202D2A917B3FED2007E83CA /* Default.png in Resources */,
-				B202D2AA17B3FED2007E83CA /* Default@2x.png in Resources */,
-				B202D2B517B40370007E83CA /* galaxy.png in Resources */,
-				B202D2B617B40370007E83CA /* galaxy@2x.png in Resources */,
-				B211289117B40C62006CE83D /* background.png in Resources */,
-				B208CC5C17B42E3A000CBDD3 /* video.mov in Resources */,
-				B208CC5E17B42FC3000CBDD3 /* video_image.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F828851C494B2C00330CF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A3FD9A41E66FDA100B5DFB0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		B202D27917B3FDCF007E83CA /* Sources */ = {
+		28F828781C494B2C00330CF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B202D28D17B3FDCF007E83CA /* main.m in Sources */,
-				B202D29117B3FDCF007E83CA /* XLAppDelegate.m in Sources */,
-				B202D29D17B3FDD0007E83CA /* XLViewController.m in Sources */,
-				B202D2AF17B3FEE2007E83CA /* XLMediaZoom.m in Sources */,
-				B202D2B017B3FEE2007E83CA /* XLVideoZoom.m in Sources */,
+				1AE793591E5DD663007F1958 /* VideoZoom.swift in Sources */,
+				1AE793581E5DD663007F1958 /* MediaZoom.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F828831C494B2C00330CF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				287D0A6E1C4B73BD004566D6 /* XLMediaZoomTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		B202D28917B3FDCF007E83CA /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B202D28A17B3FDCF007E83CA /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		28F8288A1C494B2C00330CF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28F8287C1C494B2C00330CF4 /* XLMediaZoom */;
+			targetProxy = 28F828891C494B2C00330CF4 /* PBXContainerItemProxy */;
 		};
-		B202D29817B3FDD0007E83CA /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B202D29917B3FDD0007E83CA /* en */,
-			);
-			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		B202D29E17B3FDD0007E83CA /* Debug */ = {
+		28F8288F1C494B2C00330CF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		B202D29F17B3FDD0007E83CA /* Release */ = {
+		28F828901C494B2C00330CF4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		B202D2A117B3FDD0007E83CA /* Debug */ = {
+		28F828921C494B2C00330CF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "XLMediaZoom/XLMediaZoom-Prefix.pch";
-				INFOPLIST_FILE = "XLMediaZoom/XLMediaZoom-Info.plist";
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xmartlabs.XLMediaZoom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		B202D2A217B3FDD0007E83CA /* Release */ = {
+		28F828931C494B2C00330CF4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "XLMediaZoom/XLMediaZoom-Prefix.pch";
-				INFOPLIST_FILE = "XLMediaZoom/XLMediaZoom-Info.plist";
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xmartlabs.XLMediaZoom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		28F828951C494B2C00330CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xmartlabs.XLMediaZoomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		28F828961C494B2C00330CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xmartlabs.XLMediaZoomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B202D27817B3FDCF007E83CA /* Build configuration list for PBXProject "XLMediaZoom" */ = {
+		28F828771C494B2C00330CF4 /* Build configuration list for PBXProject "XLMediaZoom" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B202D29E17B3FDD0007E83CA /* Debug */,
-				B202D29F17B3FDD0007E83CA /* Release */,
+				28F8288F1C494B2C00330CF4 /* Debug */,
+				28F828901C494B2C00330CF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B202D2A017B3FDD0007E83CA /* Build configuration list for PBXNativeTarget "XLMediaZoom" */ = {
+		28F828911C494B2C00330CF4 /* Build configuration list for PBXNativeTarget "XLMediaZoom" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B202D2A117B3FDD0007E83CA /* Debug */,
-				B202D2A217B3FDD0007E83CA /* Release */,
+				28F828921C494B2C00330CF4 /* Debug */,
+				28F828931C494B2C00330CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28F828941C494B2C00330CF4 /* Build configuration list for PBXNativeTarget "XLMediaZoomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28F828951C494B2C00330CF4 /* Debug */,
+				28F828961C494B2C00330CF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B202D27517B3FDCF007E83CA /* Project object */;
+	rootObject = 28F828741C494B2C00330CF4 /* Project object */;
 }
