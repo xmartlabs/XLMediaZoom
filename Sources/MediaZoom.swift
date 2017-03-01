@@ -1,9 +1,27 @@
 //
 //  MediaZoom.swift
-//  MediaZoom
+//  MediaZoom (https://github.com/xmartlabs/XLMediaZoom)
 //
-//  Created by Mauricio Cousillas on 2/20/17.
-//  Copyright © 2017 Mauricio Cousillas. All rights reserved.
+//  Copyright (c) 2017 Xmartlabs ( http://xmartlabs.com )
+//
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
 //
 
 import UIKit
@@ -39,20 +57,30 @@ public class MediaZoom: UIView, UIScrollViewDelegate {
         originalImageView = image
         backgroundView = MediaZoom.backgroundView(with: frame, useBlur: useBlur)
         super.init(frame: frame)
-        NotificationCenter.default.addObserver(self, selector: #selector(deviceOrientationDidChange(notification:)), name: .UIDeviceOrientationDidChange, object: nil)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(deviceOrientationDidChange(notification:)),
+            name: .UIDeviceOrientationDidChange,
+            object: nil
+        )
         imageView.image = image.image
-        addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleSingleTap(sender:))))
+        addGestureRecognizer(
+            UITapGestureRecognizer(
+                target: self,
+                action: #selector(handleSingleTap(sender:))
+            )
+        )
         contentView.addSubview(imageView)
         contentView.delegate = self
         addSubview(backgroundView)
         addSubview(contentView)
     }
-    
+
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    public func show(onHide callback: (() -> ())? = nil){
+    public func show(onHide callback: (() -> ())? = nil) {
         let frame = MediaZoom.currentFrame()
         self.frame = frame
         backgroundView.frame = frame
@@ -90,7 +118,12 @@ public class MediaZoom: UIView, UIScrollViewDelegate {
 
     private static func currentFrame() -> CGRect {
         let screenSize = UIScreen.main.bounds
-        return CGRect(x: CGFloat(0), y: CGFloat(0), width: screenSize.width, height: screenSize.height)
+        return CGRect(
+            x: CGFloat(0),
+            y: CGFloat(0),
+            width: screenSize.width,
+            height: screenSize.height
+        )
     }
 
     private func imageFrame() -> CGRect {
@@ -149,7 +182,7 @@ public class MediaZoom: UIView, UIScrollViewDelegate {
         UIView.animate(withDuration: 0.3) { [weak self] in
             self?.imageView.frame.origin = CGPoint(x: x, y: y)
         }
-            return imageView
+        return imageView
     }
 
     open func willHandleSingleTap() {
@@ -163,5 +196,5 @@ public class MediaZoom: UIView, UIScrollViewDelegate {
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
-
+    
 }

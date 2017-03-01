@@ -1,10 +1,29 @@
 //
 //  VideoZoom.swift
-//  MediaZoom
+//  MediaZoom (https://github.com/xmartlabs/XLMediaZoom)
 //
-//  Created by Mauricio Cousillas on 2/20/17.
-//  Copyright © 2017 Mauricio Cousillas. All rights reserved.
+//  Copyright (c) 2017 Xmartlabs ( http://xmartlabs.com )
 //
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+
 import AVFoundation
 import UIKit
 
@@ -18,7 +37,7 @@ public class VideoZoom: MediaZoom {
         videoUrl = url
         super.init(with: image, animationTime: animationTime, useBlur: useBlur)
     }
-    
+
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -33,7 +52,12 @@ public class VideoZoom: MediaZoom {
         imageView.layer.needsDisplayOnBoundsChange = true
         guard let playerLayer = self.playerLayer else { return }
         imageView.layer.addSublayer(playerLayer)
-        NotificationCenter.default.addObserver(self, selector: #selector(itemDidFinishPlaying), name: .AVPlayerItemDidPlayToEndTime, object: nil)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(itemDidFinishPlaying),
+            name: .AVPlayerItemDidPlayToEndTime,
+            object: nil
+        )
         player?.play()
     }
 
@@ -55,5 +79,5 @@ public class VideoZoom: MediaZoom {
         super.deviceOrientationDidChange(notification: notification)
         playerLayer?.frame = imageView.bounds
     }
-
+    
 }
