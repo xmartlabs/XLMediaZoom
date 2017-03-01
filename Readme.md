@@ -76,12 +76,6 @@ github "xmartlabs/XLMediaZoom" ~> 3.0
 
 * [Xmartlabs SRL](https://github.com/xmartlabs) ([@xmartlabs](https://twitter.com/xmartlabs))
 
-## FAQ
-
-#### How to .....
-
-You can do it by conforming to .....
-
 # Change Log
 
 This can be found in the [CHANGELOG.md](CHANGELOG.md) file.
