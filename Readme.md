@@ -51,6 +51,7 @@ If you use **XLMediaZoom** in your app We would love to hear about it! Drop us a
 Follow these 3 steps to run Example project: Clone XLMediaZoom repository, open XLMediaZoom workspace and run the *Example* project.
 
 ## Installation
+Version `3.0.0` has been rewritten completely in swift3, if you still need Objective-C support please target `v2.0.2`
 
 #### CocoaPods
 
