@@ -47,7 +47,7 @@ public class VideoZoom: MediaZoom {
         playerLayer = AVPlayerLayer(player: player)
         playerLayer?.frame = imageView.bounds
         playerLayer?.backgroundColor = imageView.backgroundColor?.cgColor
-        playerLayer?.videoGravity = AVLayerVideoGravityResizeAspectFill
+        playerLayer?.videoGravity = AVLayerVideoGravity.resizeAspectFill
 
         imageView.layer.needsDisplayOnBoundsChange = true
         guard let playerLayer = self.playerLayer else { return }
@@ -61,7 +61,7 @@ public class VideoZoom: MediaZoom {
         player?.play()
     }
 
-    public func itemDidFinishPlaying() {
+    @objc public func itemDidFinishPlaying() {
         pauseVideoAndRemoveLayer()
     }
 
