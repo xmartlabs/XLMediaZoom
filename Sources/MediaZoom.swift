@@ -141,7 +141,7 @@ public class MediaZoom: UIView, UIScrollViewDelegate {
         return originalImageView.frame
     }
 
-    func deviceOrientationDidChange(notification: NSNotification) {
+    @objc func deviceOrientationDidChange(notification: NSNotification) {
         let orientation = UIDevice.current.orientation
         switch orientation {
         case .landscapeLeft, .landscapeRight, .portrait:
@@ -154,7 +154,7 @@ public class MediaZoom: UIView, UIScrollViewDelegate {
         }
     }
 
-    public func handleSingleTap(sender: UITapGestureRecognizer) {
+    @objc public func handleSingleTap(sender: UITapGestureRecognizer) {
         willHandleSingleTap()
         UIView.animate(
             withDuration: animationTime,
